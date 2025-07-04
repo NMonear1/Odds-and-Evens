@@ -56,10 +56,9 @@ const sortOne = (e) => {
   const $bank = document.querySelector("#bank");
 
   if (bankArr.length === 0) return;
-  const randomIndex = Math.floor(Math.random() * bankArr.length);
-  const number = bankArr[randomIndex];
+  const number = bankArr[0];
 
-  bankArr.splice(randomIndex, 1);
+  bankArr.splice(0, 1);
 
   if (number % 2 === 0) {
     evensArr.push(number);
