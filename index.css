@@ -1,0 +1,85 @@
+body {
+  background: #f0f4f8;
+  color: #334e68;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#app {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem 3rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ff6b6b; /* coral */
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #627d98;
+}
+
+input.input-bank,
+input[type="text"],
+input[type="number"] {
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #d1d9e6;
+  font-size: 1rem;
+  outline: none;
+  background: #f7f9fc;
+  color: #334e68;
+  transition: border-color 0.3s ease;
+}
+
+input.input-bank[readonly] {
+  cursor: default;
+  user-select: none;
+  background: #e9eef5;
+}
+
+input.input-bank:focus,
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #667eea; /* soft blue */
+  background: #fff;
+}
+
+button {
+  cursor: pointer;
+  background: #ff6b6b; /* coral */
+  border: none;
+  padding: 0.8rem 1.4rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 10px;
+  letter-spacing: 0.8px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff8787;
+}
+
+button:active {
+  transform: scale(0.96);
+}
